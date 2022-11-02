@@ -1,0 +1,179 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  font-family: Oswald;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+header img {
+  max-height: 100%;
+  max-width: 25%;
+  margin: none;
+}
+header .header {
+  display: flex;
+}
+header .colum {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+nav {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+}
+
+nav li {
+  display: inline-flex;
+  text-decoration: underline;
+  padding: 0px 80px 0px 80px;
+  font-size: 1.5rem;
+}
+
+.clearfix::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.main {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 750px;
+  width: 100%;
+  background-image: url("pictures/home\ page.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 70px;
+  text-align: center;
+  align-items: center;
+}
+.main #mission {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  align-content: center;
+  flex: 2 1 100%;
+}
+#mission h2 {
+  margin-bottom: 0px;
+  margin-top: auto;
+}
+#services {
+  width: 100%;
+  position: relative;
+  top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#services h2,
+h4 {
+  text-align: center;
+}
+.figcaptions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 2 1 100px;
+}
+.figcaptions figcaption {
+  height: 300px;
+  width: 300px;
+  padding: 50px 150px 50px 150px;
+}
+.figcaptions img {
+  height: 100%;
+  width: 100%;
+}
+.figcaptions h4 {
+  margin-top: 0px;
+}
+footer {
+  margin-top: 110px;
+  margin-bottom: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+#contacts {
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+footer {
+  padding-left: 20px;
+}
+
+@media (max-width: 500px) {
+  .header,
+  .main,
+  #services,
+  footer {
+    width: 100%;
+  }
+  nav,
+  .main #mission,
+  #services,
+  #contacts {
+    margin: auto;
+    padding: auto;
+  }
+  body {
+    font-size: 16px;
+  }
+  header .colum {
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  nav {
+    margin-left: -55px;
+  }
+  nav li {
+    padding: 0px 10px 0px 10px;
+    font-size: 1rem;
+    margin-left: 0px;
+  }
+  .figcaptions figcaption {
+    max-height: 200px;
+    min-width: 200px;
+  }
+}
